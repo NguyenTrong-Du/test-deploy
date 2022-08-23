@@ -1,0 +1,173 @@
+<template>
+  <div class="hero">
+    <div class="hero-scroll">SCROLL DOWN</div>
+    <div class="hero-logo-area">
+      <h1 class="hero-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="450.657"
+          height="290.553"
+          viewBox="0 0 450.657 290.553"
+        >
+          <defs>
+            <clipPath id="a">
+              <rect width="450.657" height="290.553" fill="none"></rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)">
+            <path
+              class="moon"
+              d="M225.4,0a110,110,0,0,0-110,110c0,3.713.2,7.381.556,11H334.839c.36-3.619.556-7.287.556-11A110,110,0,0,0,225.4,0"
+              fill="#fff"
+            ></path>
+            <g class="type-b">
+              <path
+                d="M174.023,288l-.792,2.2H161.065l3.455-24.477H166.9L163.764,288Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M206.567,282.742h-10.4l-4.1,7.451h-2.555l13.678-24.657h1.08l6.731,24.657h-2.411Zm-.576-2.2-2.808-10.475h-.036l-5.759,10.475Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M246.131,282.814c0,4.392-3.924,7.379-8.532,7.379H229.86l3.456-24.477h7.019c3.672,0,6.479,2.268,6.479,5.76a6.779,6.779,0,0,1-4.031,6.047,5.469,5.469,0,0,1,3.348,5.291m-2.412-.036c0-2.627-1.62-4.067-4.572-4.067h-5.291L232.56,288h5.184c3.743,0,5.975-2.124,5.975-5.22m-8.351-14.866-1.187,8.639h4.642c3.384,0,5.58-2.016,5.58-4.931,0-2.448-1.548-3.708-4.32-3.708Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M265.429,279.395c0-8.027,5.8-14.039,13.138-14.039,6.623,0,10.978,4.752,10.978,11.267,0,8.063-5.831,13.93-13.174,13.93-6.7,0-10.942-4.751-10.942-11.158m21.669-2.808c0-5.327-3.42-8.963-8.495-8.963-5.976,0-10.727,4.9-10.727,11.735,0,5.327,3.384,8.927,8.423,8.927,6.192,0,10.8-4.32,10.8-11.7"
+                fill="#fff"
+              ></path>
+            </g>
+            <g class="type-t">
+              <path
+                d="M61.824,161.978v1.638h-7.56V223.34h7.56v1.638H35.364V223.34h7.9v-28.6H18.606v28.6H26.46v1.638H0V223.34H7.56V163.616H0v-1.638H26.46v1.638H18.606v29.442H43.26V163.616h-7.9v-1.638Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M88.031,224.978V223.34h9.24V163.616h-9.24v-1.638h30.324v1.638h-10.08V223.34h10.08v1.638Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M154.9,161.978V223.34h9.785v1.638H144.564V223.34h8.609V163.616h-8.609v-1.638Zm50.735,0v1.638h-8.819v62.2H194.5l-40.824-63.84h13.188l28.224,44.94v-43.3h-9.534v-1.638Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M261.826,225.818a26.822,26.822,0,0,1-11.781-2.478,25.474,25.474,0,0,1-8.757-6.888,30.77,30.77,0,0,1-5.482-10.29,41.654,41.654,0,0,1-1.868-12.684,39.611,39.611,0,0,1,1.974-12.684,31.369,31.369,0,0,1,5.67-10.29,26.364,26.364,0,0,1,8.82-6.888,27.476,27.476,0,0,1,22.806,0,26.384,26.384,0,0,1,8.82,6.888,31.406,31.406,0,0,1,5.67,10.29,39.639,39.639,0,0,1,1.974,12.684,41.653,41.653,0,0,1-1.869,12.684,30.786,30.786,0,0,1-5.481,10.29,25.418,25.418,0,0,1-8.778,6.888,26.766,26.766,0,0,1-11.718,2.478m0-1.512a11.91,11.91,0,0,0,7.791-2.457,15.443,15.443,0,0,0,4.6-6.762,41.409,41.409,0,0,0,2.2-9.87,108.263,108.263,0,0,0,.609-11.739,92.3,92.3,0,0,0-.714-11.739,41.092,41.092,0,0,0-2.415-9.87,16.5,16.5,0,0,0-4.641-6.762,11.2,11.2,0,0,0-7.434-2.457,11.371,11.371,0,0,0-7.477,2.457,16.123,16.123,0,0,0-4.661,6.762,41.691,41.691,0,0,0-2.394,9.87,92.108,92.108,0,0,0-.714,11.739,111.558,111.558,0,0,0,.588,11.739,40,40,0,0,0,2.205,9.87,15.569,15.569,0,0,0,4.62,6.762,11.971,11.971,0,0,0,7.833,2.457"
+                fill="#fff"
+              ></path>
+              <path
+                d="M343.432,161.978a32.963,32.963,0,0,1,16.737,4.032,27.4,27.4,0,0,1,10.752,11.151,34.432,34.432,0,0,1,3.759,16.317,34.927,34.927,0,0,1-2.226,12.663,28.476,28.476,0,0,1-16.3,16.527,33.866,33.866,0,0,1-12.725,2.31H317.9V223.34h7.56V163.616H317.9v-1.638ZM336.5,223.34h6.93a15.589,15.589,0,0,0,8.82-2.373,17.01,17.01,0,0,0,5.712-6.531,33.3,33.3,0,0,0,3.087-9.555,66.072,66.072,0,0,0,.945-11.4,59.556,59.556,0,0,0-1.051-11.4,33.378,33.378,0,0,0-3.3-9.555,17.993,17.993,0,0,0-5.774-6.531,14.768,14.768,0,0,0-8.442-2.373H336.5Z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M402.945,224.978V223.34h7.56V163.616h-7.56v-1.638h46.872V179.2h-1.639a22.145,22.145,0,0,0-2.121-8.022,13.272,13.272,0,0,0-5.018-5.544,15.374,15.374,0,0,0-8.191-2.016h-11.3V223.34h10.458a18.506,18.506,0,0,0,9.344-2.1,13.279,13.279,0,0,0,5.461-5.964,25.671,25.671,0,0,0,2.2-9.2h1.639v18.9Zm31.71-22.638a11.294,11.294,0,0,0-1.743-4.851,9.607,9.607,0,0,0-3.4-3.15,9.089,9.089,0,0,0-4.43-1.113h-5.628v-1.638h5.628a9.562,9.562,0,0,0,4.41-1.029,9.344,9.344,0,0,0,3.4-2.982,10.507,10.507,0,0,0,1.765-4.767h1.638v19.53Z"
+                fill="#fff"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </h1>
+      <p class="hero-catch-copy">
+        We're the better<br class="sp-only" />
+        interface<br class="sp-only" />
+        to develop it.
+      </p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'Hinode',
+}
+</script>
+
+<style>
+.hero {
+  margin-top: -80px;
+  margin-bottom: 180px;
+  position: relative;
+  height: 100vh;
+}
+.hero-scroll {
+  left: 40px;
+  bottom: 100px;
+  position: absolute;
+  font-size: 12px;
+  font-family: 'atten-new', sans-serif;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  z-index: 2;
+  /* -webkit-animation: fadeIn 1s ease 0s forwards;
+  animation: fadeIn 1s ease 0s forwards;
+  opacity: 0; */
+}
+.hero-logo-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.hero-logo {
+  position: relative;
+  padding-top: calc(38vh - 120px);
+  z-index: 2;
+}
+.hero-catch-copy {
+  position: relative;
+  margin-top: 10vh;
+  padding: 1em 0;
+  font-size: 36px;
+  font-family: 'bodoni-urw', serif;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  z-index: 2;
+  /* -webkit-animation: fadeBtoT 1.4s ease 0s forwards;
+  animation: fadeBtoT 1.4s ease 0s forwards;
+  opacity: 0; */
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+.hero-catch-copy::before,
+.hero-catch-copy::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.hero-catch-copy::before {
+  top: 0;
+}
+.sp-only {
+  display: none !important;
+}
+.hero-catch-copy::after {
+  bottom: 0;
+}
+.hero-logo-area::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* -webkit-animation: fadeIn 2s ease 0.4s forwards;
+  animation: fadeIn 2s ease 0.4s forwards; 
+  opacity: 0; */
+  background-image: url(//hinode-labo.com/wp-content/themes/hinodelabo/css/../images/bg_wave.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center 38vh;
+}
+</style>
