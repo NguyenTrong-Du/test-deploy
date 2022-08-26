@@ -1,5 +1,5 @@
 <template>
-  <div class="service-section">
+  <div class="service-section mb-240">
     <HeadingComponent title="SERVICE" />
     <div class="service-body">
       <div>
@@ -8,7 +8,7 @@
             class="large ls-is-cached lazyloaded"
             src="https://hinode-labo.com/wp-content/themes/hinodelabo/images/top/bg_service_map.png"
             width="960"
-            height="1000"
+            height="990"
             alt=""
             loading="lazy"
             data-src="https://hinode-labo.com/wp-content/themes/hinodelabo/images/top/bg_service_map.png"

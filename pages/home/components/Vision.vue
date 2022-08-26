@@ -1,5 +1,5 @@
 <template>
-  <div class="vision-section">
+  <div class="vision-section mb-240">
     <HeadingComponent title="VISION" />
     <div class="vision-bg">
       <video playsinline="" autoplay="" muted="" loop="">
@@ -21,13 +21,10 @@
             アイディアを形にする時、<br />人手の問題に頭を悩ませていては何も始められません。<br /><br />
             私たちは今以上に外国籍人材と共に、<br />21世紀の日本を生きていくことになり、<br />人材とプロジェクトの最適化を追求していきます。
           </p>
-          <p class="more">
-            <a href="#" class="btn-more">VIEW MORE <i class="arrow"></i></a>
-          </p>
+          <ButtonView />
         </div>
       </div>
     </div>
-    <ButtonView />
   </div>
 </template>
 
@@ -83,5 +80,16 @@ export default {
   margin: 0 auto;
   padding: 0 25px;
   text-align: center;
+}
+.top-vision-text {
+  margin-bottom: 60px;
+  font-size: 30px;
+  line-height: 2;
+  font-weight: 700;
+}
+.bottom-vision-text .text {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.8;
 }
 </style>

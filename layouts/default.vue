@@ -49,4 +49,10 @@ a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.mb-240 {
+  margin-bottom: 240px;
+}
+p {
+  font-size: 18px;
+}
 </style>
