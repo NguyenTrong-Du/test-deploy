@@ -1,5 +1,6 @@
 <template>
   <v-app class="app">
+    <MobileMenu />
     <Navbar />
     <v-main>
       <Nuxt />
@@ -11,7 +12,10 @@
 <script>
 import Footer from '~/components/Footer.vue'
 import Navbar from '~/components/Navbar.vue'
-export default { components: { Footer, Navbar } }
+export default {
+  name: 'DefaultLayout',
+  components: { Footer, Navbar },
+}
 </script>
 
 <style>

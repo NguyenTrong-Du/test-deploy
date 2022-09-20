@@ -87,7 +87,6 @@ export default {
 <style>
 .hero {
   margin-top: -80px;
-  margin-bottom: 180px;
   position: relative;
   height: 100vh;
 }
@@ -102,9 +101,6 @@ export default {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   z-index: 2;
-  /* -webkit-animation: fadeIn 1s ease 0s forwards;
-  animation: fadeIn 1s ease 0s forwards;
-  opacity: 0; */
 }
 .hero-logo-area {
   position: relative;
@@ -114,7 +110,7 @@ export default {
 }
 .hero-logo {
   position: relative;
-  padding-top: calc(38vh - 120px);
+  margin-top: calc(38vh - 120px);
   z-index: 2;
 }
 .hero-catch-copy {
@@ -126,9 +122,6 @@ export default {
   font-weight: 400;
   letter-spacing: 0.25em;
   z-index: 2;
-  /* -webkit-animation: fadeBtoT 1.4s ease 0s forwards;
-  animation: fadeBtoT 1.4s ease 0s forwards;
-  opacity: 0; */
   -webkit-animation-delay: 2.4s;
   animation-delay: 2.4s;
 }
@@ -162,9 +155,6 @@ export default {
   width: 100%;
   height: 100%;
   z-index: 1;
-  /* -webkit-animation: fadeIn 2s ease 0.4s forwards;
-  animation: fadeIn 2s ease 0.4s forwards; 
-  opacity: 0; */
   background-image: url(//hinode-labo.com/wp-content/themes/hinodelabo/css/../images/bg_wave.svg);
   background-size: auto;
   background-repeat: no-repeat;
