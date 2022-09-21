@@ -36,7 +36,7 @@ export default {
   font-weight: 600;
 } */
 
-.parallax-bg {
+.works-section .parallax-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -45,12 +45,12 @@ export default {
   background-size: cover;
   background-position: left;
 }
-.swiper {
+.works-section .swiper {
   width: 100%;
   /* height: 600px; */
   text-align: left;
 }
-.swiper .swiper-slide {
+.works-section .swiper .swiper-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,22 +58,22 @@ export default {
   box-sizing: border-box;
   background-color: transparent;
 }
-.swiper .swiper-slide .title {
+.works-section .swiper .swiper-slide .title {
   margin-bottom: 50px;
   font-weight: bold;
 }
-.swiper .swiper-slide .subtitle {
+.works-section .swiper .swiper-slide .subtitle {
   margin-bottom: 50px;
 }
-.swiper .swiper-slide img {
+.works-section .swiper .swiper-slide img {
   height: 650px;
   width: 100%;
 }
-.swiper .swiper-slide .text {
+.works-section .swiper .swiper-slide .text {
   max-width: 50%;
   line-height: 1.6;
 }
-.swiper-button-white:hover {
+.works-section .swiper-button-white:hover {
   color: #ff3800;
   transition: 0.3s;
 }

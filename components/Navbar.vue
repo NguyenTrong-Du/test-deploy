@@ -12,12 +12,13 @@
     </button>
     <div id="myNav" class="overlay">
       <a class="closebtn" @click="closeNav">&times;</a>
-      <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
+      <ul class="overlay-content">
+        <li><NuxtLink to="/">Home</NuxtLink></li>
+        <li><NuxtLink to="/homeservice">Service</NuxtLink></li>
+        <li><NuxtLink to="/homeworks">Works</NuxtLink></li>
+        <li><NuxtLink to="/ProductView">Career</NuxtLink></li>
+        <li><NuxtLink to="/AboutView">Articles</NuxtLink></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -89,7 +90,6 @@ export default {
   margin-top: 30px;
 }
 .overlay a {
-  padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
@@ -102,9 +102,16 @@ export default {
 }
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: 15px;
+  right: 30px;
+  font-size: 50px;
+  cursor: pointer;
+}
+.overlay .closebtn:hover {
+  color: #ff3800;
+}
+.overlay a {
+  color: #fff;
 }
 @media screen and (max-height: 450px) {
   .overlay a {

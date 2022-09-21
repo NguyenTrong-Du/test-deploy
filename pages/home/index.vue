@@ -20,6 +20,8 @@ import Articles from './components/Articles.vue'
 import Activity from './components/Activity.vue'
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'Home',
   components: {
     Hinode,
     Vision,

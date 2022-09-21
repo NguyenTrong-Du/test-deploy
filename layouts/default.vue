@@ -1,6 +1,5 @@
 <template>
   <v-app class="app">
-    <MobileMenu />
     <Navbar />
     <v-main>
       <Nuxt />
