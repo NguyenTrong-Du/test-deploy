@@ -11,8 +11,7 @@
             <p class="pc">
               社名にはこのような思いを込めています。<br />
               さまざまなビジネスアイディアが発案される中、その実現を支えるための開発リソースの不足、アマチュアな開発陣で進めたことによる技術的負債の蓄積によって、ビジネスをス
-              ケールできないお客様がいらっしゃいます。<br />
-              私たちは、さもクラウドサービスのように開発リソースを提供し、お客様の「ラボ（研究所）」として存在します。そのためのプロフェッショナルな仲間がまだまだ必要です。よかったら採用ページを覗いてみませんか？
+              ケールできないお客様がいらっしゃいます。
             </p>
             <ButtonView />
           </div>
@@ -42,23 +41,28 @@ export default {
 </script>
 
 <style>
+.career-section {
+  max-width: 1170px;
+  margin: auto;
+  margin-bottom: 240px;
+}
 .top-career {
-  padding: 0 25px;
   position: relative;
   display: flex;
   align-items: center;
 }
 .career-bg {
   width: 50%;
-  height: 100%;
   z-index: 0;
 }
+.career-bg img {
+  max-width: 100%;
+}
 .career-area {
-  max-width: 1170px;
-  margin: 0 auto;
   position: relative;
   z-index: 1;
   padding: 0 15px;
+  width: 50%;
 }
 .career-lead {
   margin-bottom: 40px;

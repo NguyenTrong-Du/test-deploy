@@ -17,7 +17,7 @@
         <li><NuxtLink to="/homeservice">Service</NuxtLink></li>
         <li><NuxtLink to="/homeworks">Works</NuxtLink></li>
         <li><NuxtLink to="/ProductView">Career</NuxtLink></li>
-        <li><NuxtLink to="/AboutView">Articles</NuxtLink></li>
+        <li><NuxtLink to="/homearticles">Articles</NuxtLink></li>
       </ul>
     </div>
   </div>

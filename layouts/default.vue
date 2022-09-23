@@ -32,6 +32,12 @@ body {
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
   animation: fadeIn 2s ease 0s 1 normal;
 }
+.container {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -54,6 +60,17 @@ a:hover {
 }
 .mb-240 {
   margin-bottom: 240px;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+a,
+button,
+img,
+input {
+  transition: all 0.3s linear;
+  outline: 0;
 }
 p {
   font-size: 18px;
