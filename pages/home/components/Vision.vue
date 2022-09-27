@@ -1,13 +1,20 @@
 <template>
-  <div class="vision-section mb-240">
+  <div class="vision-section">
     <HeadingComponent title="VISION" />
-    <div class="vision-bg">
-      <video playsinline="" autoplay="" muted="" loop="">
-        <source
-          src="https://hinode-labo.com/wp-content/themes/hinodelabo/images/top/bg_movie.mp4"
-          type="video/mp4"
-        />
-      </video>
+    <div class="pricing-shape-1">
+      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+    </div>
+    <div class="pricing-shape-2">
+      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+    </div>
+    <div class="pricing-shape-3">
+      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+    </div>
+    <div class="pricing-shape-4">
+      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+    </div>
+    <div class="pricing-shape-5">
+      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
     </div>
     <div class="vision-list">
       <div class="vision-wrap">
@@ -88,34 +95,18 @@ export default {
 
 <style>
 .vision-section {
-  margin-bottom: 120px;
-  padding: 160px 0;
+  padding: 100px 0;
   overflow: hidden;
+  /* height: 100vh; */
   position: relative;
-}
-.vision-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-.vision-bg video {
-  width: 100%;
-  height: 100%;
-}
-.vision-bg::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #333a44;
-  opacity: 0.9;
+  background: linear-gradient(
+    0deg,
+    rgb(112, 76, 159) 50%,
+    rgb(159, 27, 153) 100%
+  );
+  /* background-image: url(../../../static/5.png);
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 .vision-list {
   position: relative;
@@ -212,5 +203,71 @@ export default {
 .vision-item:hover .vision-banner a,
 .vision-item:hover .vision-banner p {
   color: #fff;
+}
+.pricing-shape-1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  -webkit-transform: translateY(-10%) translateX(-10%);
+  transform: translateY(-10%) translateX(-10%);
+  -webkit-animation: animationFramesOne 10s infinite linear;
+  animation: animationFramesOne 10s infinite linear;
+}
+@keyframes animationFramesOne {
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(73px, -1px) rotate(36deg);
+    transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    -webkit-transform: translate(141px, 72px) rotate(72deg);
+    transform: translate(141px, 72px) rotate(72deg);
+  }
+  60% {
+    -webkit-transform: translate(83px, 122px) rotate(108deg);
+    transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    -webkit-transform: translate(-40px, 72px) rotate(144deg);
+    transform: translate(-40px, 72px) rotate(144deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+.pricing-shape-2 {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  -webkit-animation: animationFramesTwo 3s ease-in-out alternate infinite;
+  animation: animationFramesTwo 3s ease-in-out alternate infinite;
+}
+@keyframes animationFramesTwo {
+  from {
+    left: 10%;
+    top: 85%;
+  }
+  to {
+    transform: translateY(100%) translateX(0%);
+  }
+}
+.pricing-shape-3 {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+.pricing-shape-4 {
+  left: 60%;
+  bottom: 30%;
+  position: absolute;
+}
+.pricing-shape-5 {
+  right: 13%;
+  bottom: 30%;
+  position: absolute;
 }
 </style>

@@ -1,24 +1,33 @@
 <template>
   <div class="header">
-    <div class="logo">
-      <img src="../static/logo.png" alt="logo" />
-    </div>
-    <button class="btn-menu" @click="openNav">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </button>
-    <div id="myNav" class="overlay">
-      <a class="closebtn" @click="closeNav">&times;</a>
-      <ul class="overlay-content">
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/homeservice">Service</NuxtLink></li>
-        <li><NuxtLink to="/homeworks">Works</NuxtLink></li>
-        <li><NuxtLink to="/ProductView">Career</NuxtLink></li>
-        <li><NuxtLink to="/homearticles">Articles</NuxtLink></li>
-      </ul>
+    <div class="container">
+      <div class="logo">
+        <img src="../static/logo.png" alt="logo" />
+      </div>
+      <button class="btn-menu" @click="openNav">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </button>
+      <div id="myNav" class="overlay">
+        <a class="closebtn" @click="closeNav">&times;</a>
+        <diV>
+          <a><img src="../static/logo.png" alt="logo-2" /></a>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </diV>
+        <ul class="overlay-content">
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/homeservice">Service</NuxtLink></li>
+          <li><NuxtLink to="/homeworks">Works</NuxtLink></li>
+          <li><NuxtLink to="/homecareer">Career</NuxtLink></li>
+          <li><NuxtLink to="/homearticles">Articles</NuxtLink></li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -39,13 +48,20 @@ export default {
 
 <style>
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  padding: 10px 0;
+  box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 7%);
+}
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 40px;
 }
 .logo {
-  width: 100px;
+  width: 120px;
 }
 .logo img {
   max-width: 100%;
@@ -61,7 +77,7 @@ export default {
   width: 35px;
   height: 4px;
   display: block;
-  background: #fff;
+  background: #000;
   transition: 0.3s;
 }
 .btn-menu ul li:nth-child(2) {
@@ -113,6 +129,7 @@ export default {
 .overlay a {
   color: #fff;
 }
+
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;

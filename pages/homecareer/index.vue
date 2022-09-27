@@ -1,6 +1,6 @@
 <template>
   <div class="home-career">
-    <div class="hero">
+    <div class="hero-career">
       <div class="hero-top">
         <ul>
           <li><img src="../../static/image-1.jpg" /></li>
@@ -32,4 +32,13 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.home-career {
+  position: relative;
+}
+.home-career .hero-top ul li {
+  display: inline-block;
+}
+.home-career {
+}
+</style>

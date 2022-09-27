@@ -1,11 +1,10 @@
 <template>
-  <v-app class="app">
+  <div>
     <Navbar />
-    <v-main>
-      <Nuxt />
-    </v-main>
+
+    <Nuxt />
     <Footer />
-  </v-app>
+  </div>
 </template>
 
 <script>
@@ -19,9 +18,10 @@ export default {
 
 <style>
 body {
-  background-color: #333a44;
+  background-color: #000;
   color: #fff;
   max-width: 100%;
+  line-height: 1.6;
   font-family: 'noto-sans-cjk-jp', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -74,5 +74,17 @@ input {
 }
 p {
   font-size: 18px;
+}
+.col-lg-3 {
+  flex: 0 0 auto;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.33%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 </style>

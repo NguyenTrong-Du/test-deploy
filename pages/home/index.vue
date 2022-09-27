@@ -1,34 +1,31 @@
 <template>
   <div>
-    <Hinode />
+    <HeroContent />
     <Vision />
     <Service />
     <Works />
     <Career />
-    <Articles />
     <Activity />
   </div>
 </template>
 
 <script>
-import Hinode from './components/Hinode.vue'
+import HeroContent from './components/HeroContent.vue'
 import Vision from './components/Vision.vue'
 import Service from './components/Service.vue'
 import Works from './components/Works.vue'
 import Career from './components/Career.vue'
-import Articles from './components/Articles.vue'
 import Activity from './components/Activity.vue'
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Home',
   components: {
-    Hinode,
+    HeroContent,
     Vision,
     Service,
     Works,
     Career,
-    Articles,
     Activity,
   },
 }

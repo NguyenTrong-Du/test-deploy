@@ -1,17 +1,9 @@
 <template>
   <div class="business">
-    <div class="business-heading">
+    <!-- <div class="business-heading">
       <h3>BUSSINESS</h3>
       <p>オフショア開発</p>
-    </div>
-    <ul>
-      <li>
-        <NuxtLink to="/homearticles/Business">Home</NuxtLink>
-      </li>
-      <li>
-        <NuxtLink to="/homearticles/Technology">About</NuxtLink>
-      </li>
-    </ul>
+    </div> -->
     <div class="business-post">
       <div class="business-item">
         <a>
@@ -60,64 +52,10 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Business',
+  props: ['title'],
 }
 </script>
 <style scoped>
-.business {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 25px;
-  margin-top: 80px;
-}
-.business-heading {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.business-heading h3 {
-  font-size: 65px;
-  margin-bottom: 20px;
-}
-.business-heading p {
-  font-size: 35px;
-}
-.business ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-.business ul li {
-  list-style: none;
-  padding: 6px;
-  background-color: #2a3139;
-}
-.business ul li a {
-  color: white;
-}
-.business ul li:hover {
-  list-style: none;
-  padding: 6px;
-  background-color: #65cf37;
-}
-.business ul li:hover a {
-  color: white;
-}
-.business a {
-  text-decoration: none;
-}
-.business a:active {
-  color: 'red';
-}
-
-.business .active {
-  list-style: none;
-  padding: 6px;
-  background-color: rgb(238, 0, 0);
-}
-
-.active a {
-  color: #eee;
-}
 .business-post {
   display: flex;
   flex-wrap: wrap;

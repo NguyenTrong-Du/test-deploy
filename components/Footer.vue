@@ -82,7 +82,7 @@
       </div>
       <div class="footer-bottom">
         <div class="footer-copyright">
-          <p>© Copyrights 2022 <a>BTC-STUDIO</a> All Rights Reserved.</p>
+          <p>© Copyrights 2022 <a>BTC STUDIO</a> All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@ export default {
 }
 .footer-top {
   display: flex;
-  padding: 80px 0 70px;
+  padding: 100px 0 90px;
   border-bottom: 1px solid #919194;
 }
 .footer-top > div {
@@ -147,7 +147,7 @@ export default {
   display: block;
   width: 10px;
   height: 1px;
-  background-color: #fff;
+  background-color: #ff5538;
   -webkit-transform: translateY(-50%) scale(0, 1);
   transform: translateY(-50%) scale(0, 1);
   -webkit-transition: all 0.3s ease;
@@ -173,11 +173,29 @@ export default {
 .footer-bottom .footer-copyright a {
   display: inline-block;
   font-weight: bold;
-  color: #6bd0ff;
+  background: radial-gradient(
+    circle,
+    #feb302,
+    #f8c600,
+    #eed900,
+    #e0ec00,
+    #cdff05
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
   transition: all 0.3s;
 }
 .footer-bottom .footer-copyright a:hover {
-  color: #ff5538;
+  background: radial-gradient(
+    circle,
+    #0206fe,
+    #0063f8,
+    #0083ee,
+    #246591,
+    #ade7e2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

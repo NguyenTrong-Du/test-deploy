@@ -1,82 +1,50 @@
 <template>
-  <div class="works-section mb-240">
+  <div class="works-section">
     <HeadingComponent title="WORKS" />
     <div class="works-description pc-only">
-      HR、不動産、製薬、ECモール、Ad、NoCode、予約システム、CtoC、BtoB、AI…
-      など、<br />多数の業界の、さまざまなWebシステム、モバイルアプリを開発しています。
+      We are proud team of great project
     </div>
     <SliderBanner />
-    <ButtonView />
   </div>
 </template>
 
 <script>
 import HeadingComponent from './HeadingComponent.vue'
 import SliderBanner from './SliderBanner.vue'
-import ButtonView from '~/components/ButtonView.vue'
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Works',
-  components: { HeadingComponent, ButtonView, SliderBanner },
+  components: { HeadingComponent, SliderBanner },
 }
 </script>
 
 <style>
 .works-section {
   text-align: center;
+  padding: 100px 0;
+  /* height: 100vh; */
+  position: relative;
+  background-image: url(../../../static/10.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .works-description {
   margin-bottom: 50px;
+  font-size: 20px;
 }
-.works-section .parallax-bg {
+.works-section .swiper-slide img {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  background-size: cover;
-  background-position: left;
-}
-.works-section .swiper-slide::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: linear-gradient(180deg, #ffffff00 0%, #010f31 100%);
   width: 100%;
   height: 100%;
-  opacity: 0.7;
-  z-index: 2;
+  border-radius: 5px;
 }
-.works-section .swiper {
-  width: 100%;
-  text-align: left;
+.works-section .content {
+  z-index: 3;
+  max-width: 80%;
 }
-.works-section .swiper .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  box-sizing: border-box;
-  background-color: transparent;
-}
-.works-section .swiper .swiper-slide .title {
-  margin-bottom: 50px;
-  font-weight: bold;
-}
-.works-section .swiper .swiper-slide .subtitle {
-  margin-bottom: 50px;
-}
-.works-section .swiper .swiper-slide img {
-  height: 650px;
-  width: 100%;
-}
-.works-section .swiper .swiper-slide .content {
-  z-index: 5;
-}
-.works-section .swiper .swiper-slide .text {
-  max-width: 50%;
-  line-height: 1.6;
+.works-section .content h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 .swiper .swiper-button-white {
   width: 60px;
@@ -99,20 +67,21 @@ export default {
   color: #ffffff;
   background: #005de0;
 }
+.swiper .swiper-button-next {
+  right: 16%;
+}
+.swiper .swiper-button-prev {
+  left: 16%;
+}
 .swiper:hover .swiper-button-next {
-  right: 50px;
+  right: 20%;
 }
 .swiper:hover .swiper-button-prev {
-  left: 50px;
+  left: 20%;
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 20px;
   font-weight: 700;
-}
-.swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  opacity: 0.9;
 }
 </style>
