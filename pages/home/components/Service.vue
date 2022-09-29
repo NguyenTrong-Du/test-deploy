@@ -1,85 +1,69 @@
 <template>
   <div class="service-section">
-    <div class="container">
-      <HeadingComponent title="SERVICE" />
-      <div class="service-banner">
-        <div class="col-lg-4">
-          <div class="services-item">
-            <div class="services-image">
-              <a href="#"
-                ><img src="../../../static/services-1.jpg" alt="image"
-              /></a>
+    <div>
+      <div class="container">
+        <HeadingComponent title="SERVICE" />
+        <div class="service-banner">
+          <div class="col-lg-4">
+            <div class="services-item">
+              <div class="services-image">
+                <a href="#"
+                  ><img src="../../../static/services-1.jpg" alt="image"
+                /></a>
+              </div>
+              <div class="services-content">
+                <h3>
+                  <a href="#">Software Development</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…
+                </p>
+                <a href="#" class="services-btn">View More</a>
+              </div>
             </div>
-            <div class="services-content">
-              <h3>
-                <a href="#">Software Development</a>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…
-              </p>
-              <a href="#" class="services-btn">View More</a>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="services-item">
+              <div class="services-image">
+                <a href="#"
+                  ><img src="../../../static/services-2.jpg" alt="image"
+                /></a>
+              </div>
+              <div class="services-content">
+                <h3>
+                  <a href="#">App Development</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…
+                </p>
+                <a href="#" class="services-btn">View More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="services-item">
+              <div class="services-image">
+                <a href="#"
+                  ><img src="../../../static/services-3.jpg" alt="image"
+                /></a>
+              </div>
+              <div class="services-content">
+                <h3>
+                  <a href="#">Web Development</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…
+                </p>
+                <a href="#" class="services-btn">View More</a>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4">
-          <div class="services-item">
-            <div class="services-image">
-              <a href="#"
-                ><img src="../../../static/services-2.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="services-content">
-              <h3>
-                <a href="#">App Development</a>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…
-              </p>
-              <a href="#" class="services-btn">View More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="services-item">
-            <div class="services-image">
-              <a href="#"
-                ><img src="../../../static/services-3.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="services-content">
-              <h3>
-                <a href="#">Web Development</a>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…
-              </p>
-              <a href="#" class="services-btn">View More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-3">
-          <div class="services-item">
-            <div class="services-image">
-              <a href="#"
-                ><img src="../../../static/services-4.jpg" alt="image"
-              /></a>
-            </div>
-            <div class="services-content">
-              <h3>
-                <a href="#">Analytic Solutions</a>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…
-              </p>
-              <a href="#" class="services-btn">View More</a>
-            </div>
-          </div>
-        </div> -->
+        <ButtonView />
       </div>
-      <ButtonView />
+      <CirclesAnimation />
     </div>
   </div>
 </template>
@@ -87,20 +71,26 @@
 <script>
 import HeadingComponent from './HeadingComponent.vue'
 import ButtonView from '~/components/ButtonView.vue'
+import CirclesAnimation from '~/components/CirclesAnimation.vue'
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Service',
-  components: { HeadingComponent, ButtonView },
+  components: { HeadingComponent, ButtonView, CirclesAnimation },
 }
 </script>
 
 <style>
 .service-section {
-  /* height: 100vh; */
-  padding: 100px 0;
+  height: 100vh;
+  padding: 80px 0;
   display: flex;
+  justify-content: center;
+  position: relative;
   align-items: center;
-  background-image: url(../../../static/bg-2.png);
+  background-image: url(../../../static/bg-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .service-banner {
   position: relative;

@@ -1,10 +1,12 @@
 <template>
   <div class="works-section">
-    <HeadingComponent title="WORKS" />
-    <div class="works-description pc-only">
-      We are proud team of great project
+    <div>
+      <HeadingComponent title="WORKS" />
+      <div class="works-description pc-only">
+        We are proud team of great project
+      </div>
+      <SliderBanner />
     </div>
-    <SliderBanner />
   </div>
 </template>
 
@@ -21,12 +23,19 @@ export default {
 <style>
 .works-section {
   text-align: center;
-  padding: 100px 0;
-  /* height: 100vh; */
+  padding: 80px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   background-image: url(../../../static/10.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.works-section > div {
+  position: relative;
+  width: 100%;
 }
 .works-description {
   margin-bottom: 50px;

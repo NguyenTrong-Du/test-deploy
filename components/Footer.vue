@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="container">
       <div class="footer-top">
-        <div>
+        <div class="col-lg-6">
           <div class="footer-widget-about">
             <a class="footer-logo"
               ><img src="../static/logo.png" alt="logo"
@@ -11,33 +11,36 @@
               <ul>
                 <li>
                   <div class="info-icon">
-                    <i class="flaticon-phone-call"></i>
+                    <span class="material-icons"> call </span>
                   </div>
                   <div class="info-text">
-                    <span><a href="#">+91 458 654 528</a></span>
+                    <span><a href="#">0862009300</a></span>
                   </div>
                 </li>
                 <li>
                   <div class="info-icon">
-                    <i class="far fa-envelope-open"></i>
+                    <span class="material-icons"> email </span>
                   </div>
                   <div class="info-text">
-                    <span><a href="#">info@example.com</a></span>
+                    <span><a href="#">hello@btc-studio.io</a></span>
                   </div>
                 </li>
                 <li>
                   <div class="info-icon">
-                    <i class="flaticon-pin"></i>
+                    <span class="material-icons"> place </span>
                   </div>
                   <div class="info-text">
-                    <span>60 East 65th Street, NY</span>
+                    <span
+                      >Tầng 2, Số 5 Biệt thự 2, Khu đô thị Vinaconex 3, Phường
+                      Trung Văn, Quận Nam Từ Liêm, Hà Nội
+                    </span>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div class="footer-nav footer-widget">
             <h4 class="footer-widget-title">SERVICE</h4>
             <div class="footerNav">
@@ -51,23 +54,9 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="col-lg-3">
           <div class="footer-nav footer-widget">
             <h4 class="footer-widget-title">SUPPORT</h4>
-            <div class="footerNav">
-              <ul class="footerNav-list">
-                <li class="footerNav-item"><a href="#">Career</a></li>
-                <li class="footerNav-item"><a href="#">Service</a></li>
-                <li class="footerNav-item"><a href="#">News</a></li>
-                <li class="footerNav-item"><a href="#">Works</a></li>
-                <li class="footerNav-item"><a href="#">Articles</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="footer-nav footer-widget">
-            <h4 class="footer-widget-title">WORKS</h4>
             <div class="footerNav">
               <ul class="footerNav-list">
                 <li class="footerNav-item"><a href="#">Career</a></li>
@@ -82,7 +71,7 @@
       </div>
       <div class="footer-bottom">
         <div class="footer-copyright">
-          <p>© Copyrights 2022 <a>BTC STUDIO</a> All Rights Reserved.</p>
+          <p>© Copyrights 2021 <a>BTC STUDIO</a> All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -98,18 +87,18 @@ export default {
 
 <style>
 .footer {
-  background: #000;
+  background: #000c29;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .footer-top {
   display: flex;
   padding: 100px 0 90px;
   border-bottom: 1px solid #919194;
 }
-.footer-top > div {
-  flex: 0 0 auto;
-  width: 25%;
-  padding-left: 15px;
-  padding-right: 15px;
+.footer-widget-about {
+  padding-right: 100px;
 }
 .footer-logo {
   max-width: 125px;
@@ -120,12 +109,19 @@ export default {
 }
 .widget-info ul li {
   display: flex;
-  align-items: center;
   flex-wrap: nowrap;
   margin-top: 10px;
 }
 .widget-info ul li .info-text a:hover {
-  color: #ff5538;
+  color: #005de0;
+}
+.widget-info ul li .info-icon span {
+  display: inline-block;
+  color: #005de0;
+  font-size: 18px;
+  margin-right: 10px;
+  font-weight: 700;
+  padding-top: 3px;
 }
 .footerNav {
   margin-top: 15px;
@@ -136,8 +132,8 @@ export default {
 .footerNav-item a {
   position: relative;
   padding: 4px 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .footerNav-item a::after {
   content: '';
@@ -147,15 +143,14 @@ export default {
   display: block;
   width: 10px;
   height: 1px;
-  background-color: #ff5538;
+  background-color: #005de0;
   -webkit-transform: translateY(-50%) scale(0, 1);
   transform: translateY(-50%) scale(0, 1);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  transition: all 0.3s linear;
 }
 .footerNav-item a:hover {
   padding-left: 14px;
-  color: #ff5538;
+  color: #005de0;
 }
 .footerNav-item a:hover::after {
   -webkit-transform: translateY(-50%) scale(1, 1);
@@ -184,7 +179,7 @@ export default {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s linear;
 }
 .footer-bottom .footer-copyright a:hover {
   background: radial-gradient(

@@ -1,57 +1,55 @@
 <template>
   <div class="business">
-    <!-- <div class="business-heading">
-      <h3>TECHGOLOGY</h3>
-      <p>オフショア開発</p>
-    </div> -->
     <div class="business-post">
       <div class="business-item">
         <a>
-          <div><img src="../../static/articles.png" alt="articles" /></div>
+          <div><img src="../../static/11.png" alt="articles" /></div>
           <div>
-            <h4>オフショア開発</h4>
+            <h4>How Technology Dominate In The new World In 2022</h4>
             <span>2022.06.15</span>
-            <p>ベトナム人BrSE(ブリッジSE)とはどんな人？</p>
+            <p>
+              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
+              eir m od tempor invidunt ut labore.
+            </p>
           </div>
         </a>
       </div>
       <div class="business-item">
         <a>
-          <div><img src="../../static/articles.png" alt="articles" /></div>
+          <div><img src="../../static/12.png" alt="articles" /></div>
           <div>
-            <h4>オフショア開発</h4>
+            <h4>How Technology Dominate In The new World In 2022</h4>
             <span>2022.06.15</span>
-            <p>ベトナム人BrSE(ブリッジSE)とはどんな人？</p>
+            <p>
+              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
+              eir m od tempor invidunt ut labore.
+            </p>
           </div>
         </a>
       </div>
       <div class="business-item">
         <a>
-          <div><img src="../../static/articles.png" alt="articles" /></div>
+          <div><img src="../../static/13.png" alt="articles" /></div>
           <div>
-            <h4>オフショア開発</h4>
+            <h4>How Business Dominate In The new World In 2022</h4>
             <span>2022.06.15</span>
-            <p>ベトナム人BrSE(ブリッジSE)とはどんな人？</p>
+            <p>
+              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
+              eir m od tempor invidunt ut labore.
+            </p>
           </div>
         </a>
       </div>
       <div class="business-item">
         <a>
-          <div><img src="../../static/articles.png" alt="articles" /></div>
+          <div><img src="../../static/14.png" alt="articles" /></div>
           <div>
-            <h4>オフショア開発</h4>
+            <h4>How Creative Dominate In The new World In 2022</h4>
             <span>2022.06.15</span>
-            <p>ベトナム人BrSE(ブリッジSE)とはどんな人？</p>
-          </div>
-        </a>
-      </div>
-      <div class="business-item">
-        <a>
-          <div><img src="../../static/articles.png" alt="articles" /></div>
-          <div>
-            <h4>オフショア開発</h4>
-            <span>2022.06.15</span>
-            <p>ベトナム人BrSE(ブリッジSE)とはどんな人？</p>
+            <p>
+              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
+              eir m od tempor invidunt ut labore.
+            </p>
           </div>
         </a>
       </div>
@@ -86,10 +84,26 @@ export default {
 }
 .business-item img {
   max-width: 100%;
-  transition: all 0.5s;
+  cursor: pointer;
 }
 .business-item:hover img {
   scale: 1.3;
   opacity: 0.8;
+}
+.business-item h4 {
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.business-item:hover h4 {
+  color: #005de0;
+}
+.business-item span {
+  margin-top: 10px;
+  display: block;
+}
+.business-item p {
+  margin-top: 10px;
+  font-size: 15px;
 }
 </style>

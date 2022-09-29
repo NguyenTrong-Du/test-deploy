@@ -2,31 +2,25 @@
   <div class="header">
     <div class="container">
       <div class="logo">
-        <img src="../static/logo.png" alt="logo" />
+        <a href="#"><img src="../static/logo.png" alt="logo" /></a>
       </div>
-      <button class="btn-menu" @click="openNav">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </button>
-      <div id="myNav" class="overlay">
-        <a class="closebtn" @click="closeNav">&times;</a>
-        <diV>
-          <a><img src="../static/logo.png" alt="logo-2" /></a>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </diV>
-        <ul class="overlay-content">
+      <div class="header-menu">
+        <ul class="main-menu">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/homeservice">Service</NuxtLink></li>
-          <li><NuxtLink to="/homeworks">Works</NuxtLink></li>
-          <li><NuxtLink to="/homecareer">Career</NuxtLink></li>
+          <li><NuxtLink to="/homeabout">About</NuxtLink></li>
           <li><NuxtLink to="/homearticles">Articles</NuxtLink></li>
+          <li><NuxtLink to="/homecontact">Contact</NuxtLink></li>
         </ul>
+      </div>
+      <div class="header-info">
+        <div class="info-icon">
+          <span class="material-icons"> call </span>
+        </div>
+        <div class="info-text">
+          <span>Free Consultant</span>
+          <span class="number"><a href="#">0862009300</a></span>
+        </div>
       </div>
     </div>
   </div>
@@ -35,14 +29,6 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Navbar',
-  methods: {
-    openNav() {
-      document.getElementById('myNav').style.width = '30%'
-    },
-    closeNav() {
-      document.getElementById('myNav').style.width = '0%'
-    },
-  },
 }
 </script>
 
@@ -54,6 +40,8 @@ export default {
   background: #fff;
   padding: 10px 0;
   box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 7%);
+  color: #000;
+  opacity: 0.8;
 }
 .header .container {
   display: flex;
@@ -67,77 +55,52 @@ export default {
   max-width: 100%;
   height: auto;
 }
-.btn-menu {
-  display: block;
-  background: transparent;
-  border: none;
-  cursor: pointer;
+.header-menu .main-menu {
+  display: flex;
 }
-.btn-menu ul li {
-  width: 35px;
-  height: 4px;
-  display: block;
-  background: #000;
-  transition: 0.3s;
-}
-.btn-menu ul li:nth-child(2) {
-  margin: 7px 0;
-}
-.btn-menu:hover ul li {
-  background: #ff3800;
-}
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  right: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-.overlay-content {
+.header-menu .main-menu li {
   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  padding: 10px 25px;
 }
-.overlay a {
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
+.header-menu .main-menu li a {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.header-menu .main-menu li .nuxt-link-exact-active,
+.header-menu .main-menu li:hover a {
+  color: #005de0;
+}
+.header-info {
+  align-items: end;
+  display: flex;
+}
+.header-info .info-icon {
+  line-height: 1;
+}
+.header-info .info-icon span {
+  font-size: 30px;
+  color: #005de0;
+  font-weight: 900;
+}
+.header-info .info-text {
+  margin-left: 10px;
+}
+.header-info .info-text span {
   display: block;
-  transition: 0.3s;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ababab;
 }
-.overlay a:hover,
-.overlay a:focus {
-  color: #f1f1f1;
+.header-info .info-text .number {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #090d2f;
 }
-.overlay .closebtn {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  font-size: 50px;
-  cursor: pointer;
-}
-.overlay .closebtn:hover {
-  color: #ff3800;
-}
-.overlay a {
-  color: #fff;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+.header-info .info-text .number:hover {
+  color: #005de0;
 }
 </style>

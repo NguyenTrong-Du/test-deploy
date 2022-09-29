@@ -2,33 +2,33 @@
   <div class="nav-articles">
     <div class="container">
       <div v-if="$route.path === '/homearticles'" class="business-heading">
-        <h3>ALL</h3>
-        <p>オフショア開発</p>
+        <h3>BUSINESS</h3>
+        <p>Read Our Articles To Get All Recent Tech News</p>
       </div>
       <div
         v-else-if="$route.path === '/homearticles/Business'"
         class="business-heading"
       >
-        <h3>BUSINESS</h3>
-        <p>オフショア開発</p>
+        <h3>TECHNOGOGY</h3>
+        <p>Read Our Articles To Get All Recent Tech News</p>
       </div>
       <div
         v-else-if="$route.path === '/homearticles/Technology'"
         class="business-heading"
       >
-        <h3>TECHNOLOGY</h3>
-        <p>オフショア開発</p>
+        <h3>CREATIVE</h3>
+        <p>Read Our Articles To Get All Recent Tech News</p>
       </div>
       <nav>
         <ul>
           <li>
-            <NuxtLink to="/homearticles">Parent</NuxtLink>
+            <NuxtLink to="/homearticles">Business</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/homearticles/Business">Child</NuxtLink>
+            <NuxtLink to="/homearticles/Business">Technology</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/homearticles/Technology">Child 2</NuxtLink>
+            <NuxtLink to="/homearticles/Technology">Creative</NuxtLink>
           </li>
         </ul>
       </nav>

@@ -1,28 +1,38 @@
 <template>
   <div class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h3
-          class="sub-title aos-init aos-animate"
-          data-aos-delay="600"
-          data-aos="fade-up"
-        >
-          Technology Releted Consultancy
-        </h3>
-        <h2
-          class="title aos-init aos-animate"
-          data-aos="fade-up"
-          data-aos-delay="700"
-        >
-          We bring great Ideas to life
-        </h2>
-        <p data-aos="fade-up" data-aos-delay="800" class="aos-init aos-animate">
-          We provide the most responsive and functional IT design for companies
-          and businesses worldwide.
-        </p>
-        <ButtonView />
+    <div class="hero-content">
+      <div class="container">
+        <div>
+          <h3
+            class="sub-title aos-init aos-animate"
+            data-aos-delay="600"
+            data-aos="fade-up"
+          >
+            Technology Releted Consultancy
+          </h3>
+          <h2
+            class="title aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            We bring great Ideas to life
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="800"
+            class="aos-init aos-animate"
+          >
+            We provide the most responsive and functional IT design for
+            companies and businesses worldwide.
+          </p>
+          <ButtonView />
+        </div>
+        <div class="spring">
+          <img src="../../../static/features-shape.png" />
+        </div>
       </div>
-      <div class="area">
+      <CirclesAnimation />
+      <!-- <div class="area">
         <ul class="circles">
           <li></li>
           <li></li>
@@ -35,16 +45,17 @@
           <li></li>
           <li></li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
 
 <script>
 import ButtonView from '~/components/ButtonView.vue'
+import CirclesAnimation from '~/components/CirclesAnimation.vue'
 export default {
   name: 'HeroContent',
-  components: { ButtonView },
+  components: { ButtonView, CirclesAnimation },
 }
 </script>
 
@@ -52,17 +63,24 @@ export default {
 .hero {
   position: relative;
   height: 100vh;
-  /* background: linear-gradient(
-    283deg,
-    rgb(31, 23, 47) 0%,
-    rgb(62, 9, 40) 45%,
-    rgb(17, 58, 72) 100%
-  ); */
+  padding: 80px 0;
   background-image: url(../../../static/bg-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero .container {
   display: flex;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.hero .container > div {
+  width: 50%;
+  overflow: hidden;
 }
 .hero .hero-content h3 {
   line-height: 30px;
@@ -88,13 +106,7 @@ export default {
   color: #fff;
   font-size: 50px;
 }
-.area {
-  /* background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
-  width: 100%;
-  height: 100vh;
-}
-.circles {
+/* .circles {
   position: absolute;
   top: 0;
   left: 0;
@@ -188,6 +200,16 @@ export default {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+  }
+} */
+
+.spring img {
+  transform: rotate(0);
+  animation: springimg 25s linear infinite;
+}
+@keyframes springimg {
+  from {
+    transform: rotate(360deg);
   }
 }
 </style>

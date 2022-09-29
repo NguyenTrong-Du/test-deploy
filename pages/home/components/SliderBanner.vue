@@ -95,7 +95,6 @@ export default {
 <style scoped>
 .example-3d {
   width: 100%;
-  /* height: 550px; */
 }
 .example-3d .swiper {
   height: 100%;

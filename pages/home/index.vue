@@ -4,7 +4,7 @@
     <Vision />
     <Service />
     <Works />
-    <Career />
+    <Mission />
     <Activity />
   </div>
 </template>
@@ -14,7 +14,7 @@ import HeroContent from './components/HeroContent.vue'
 import Vision from './components/Vision.vue'
 import Service from './components/Service.vue'
 import Works from './components/Works.vue'
-import Career from './components/Career.vue'
+import Mission from './components/Mission.vue'
 import Activity from './components/Activity.vue'
 
 export default {
@@ -25,7 +25,7 @@ export default {
     Vision,
     Service,
     Works,
-    Career,
+    Mission,
     Activity,
   },
 }

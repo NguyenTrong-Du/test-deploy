@@ -1,80 +1,82 @@
 <template>
   <div class="vision-section">
-    <HeadingComponent title="VISION" />
-    <div class="pricing-shape-1">
-      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
-    </div>
-    <div class="pricing-shape-2">
-      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
-    </div>
-    <div class="pricing-shape-3">
-      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
-    </div>
-    <div class="pricing-shape-4">
-      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
-    </div>
-    <div class="pricing-shape-5">
-      <img src="../../../static/pricing-shape-1.png" alt="pricing" />
-    </div>
-    <div class="vision-list">
-      <div class="vision-wrap">
-        <div class="vision-item text-center">
-          <div class="vision-banner">
-            <div class="shape-1"></div>
-            <div class="shape-2">
-              <img src="../../../static/shape-2.png" alt="business" />
-            </div>
-            <div class="vision-icon">
-              <img src="../../../static/service-4.png" alt="shape" />
-            </div>
-            <div class="vision-content">
-              <h3 class="title">
-                <a href="#"> Business</a>
-              </h3>
-              <p>
-                We provide the most responsive and functional IT design for
-                companies and businesses worldwide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="vision-item text-center">
-          <div class="vision-banner">
-            <div class="shape-1"></div>
-            <div class="shape-2">
-              <img src="../../../static/shape-2.png" alt="business" />
-            </div>
-            <div class="vision-icon">
-              <img src="../../../static/service-3.png" alt="shape" />
-            </div>
-            <div class="vision-content">
-              <h3 class="title">
-                <a href="#"> Technology</a>
-              </h3>
-              <p>
-                We provide the most responsive and functional IT design for
-                companies and businesses worldwide.
-              </p>
+    <div>
+      <HeadingComponent title="VISION" />
+      <div class="pricing-shape-1">
+        <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+      </div>
+      <div class="pricing-shape-2">
+        <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+      </div>
+      <div class="pricing-shape-3">
+        <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+      </div>
+      <div class="pricing-shape-4">
+        <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+      </div>
+      <div class="pricing-shape-5">
+        <img src="../../../static/pricing-shape-1.png" alt="pricing" />
+      </div>
+      <div class="vision-list">
+        <div class="vision-wrap">
+          <div class="vision-item text-center">
+            <div class="vision-banner">
+              <div class="shape-1"></div>
+              <div class="shape-2">
+                <img src="../../../static/shape-2.png" alt="business" />
+              </div>
+              <div class="vision-icon">
+                <img src="../../../static/service-4.png" alt="shape" />
+              </div>
+              <div class="vision-content">
+                <h3 class="title">
+                  <a href="#"> Business</a>
+                </h3>
+                <p>
+                  We provide the most responsive and functional IT design for
+                  companies and businesses worldwide.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="vision-item text-center">
-          <div class="vision-banner">
-            <div class="shape-1"></div>
-            <div class="shape-2">
-              <img src="../../../static/shape-2.png" alt="business" />
+          <div class="vision-item text-center">
+            <div class="vision-banner">
+              <div class="shape-1"></div>
+              <div class="shape-2">
+                <img src="../../../static/shape-2.png" alt="business" />
+              </div>
+              <div class="vision-icon">
+                <img src="../../../static/service-3.png" alt="shape" />
+              </div>
+              <div class="vision-content">
+                <h3 class="title">
+                  <a href="#"> Technology</a>
+                </h3>
+                <p>
+                  We provide the most responsive and functional IT design for
+                  companies and businesses worldwide.
+                </p>
+              </div>
             </div>
-            <div class="vision-icon">
-              <img src="../../../static/service-2.png" alt="shape" />
-            </div>
-            <div class="vision-content">
-              <h3 class="title">
-                <a href="#"> Creative</a>
-              </h3>
-              <p>
-                We provide the most responsive and functional IT design for
-                companies and businesses worldwide.
-              </p>
+          </div>
+          <div class="vision-item text-center">
+            <div class="vision-banner">
+              <div class="shape-1"></div>
+              <div class="shape-2">
+                <img src="../../../static/shape-2.png" alt="business" />
+              </div>
+              <div class="vision-icon">
+                <img src="../../../static/service-2.png" alt="shape" />
+              </div>
+              <div class="vision-content">
+                <h3 class="title">
+                  <a href="#"> Creative</a>
+                </h3>
+                <p>
+                  We provide the most responsive and functional IT design for
+                  companies and businesses worldwide.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +87,6 @@
 
 <script>
 import HeadingComponent from './HeadingComponent.vue'
-// import ButtonView from '~/components/ButtonView.vue'
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Vision',
@@ -95,18 +96,17 @@ export default {
 
 <style>
 .vision-section {
-  padding: 100px 0;
+  padding: 80px 0;
   overflow: hidden;
-  /* height: 100vh; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  background: linear-gradient(
-    0deg,
-    rgb(112, 76, 159) 50%,
-    rgb(159, 27, 153) 100%
-  );
-  /* background-image: url(../../../static/5.png);
+  background-image: url(../../../static/bg-2.png);
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .vision-list {
   position: relative;

@@ -38,6 +38,11 @@ body {
   padding-right: 15px;
   margin: auto;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -86,5 +91,63 @@ p {
   width: 33.33%;
   padding-left: 15px;
   padding-right: 15px;
+}
+.col-lg-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.banner-section {
+  background-image: url(../static/page-banner.png);
+  padding-top: 80px;
+  min-height: 550px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+  z-index: 1;
+}
+.banner-section h2 {
+  font-size: 70px;
+  display: inline-block;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.banner-section .circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-image: linear-gradient(-48deg, #54d6eb 0%, #035cdd 100%);
+  opacity: 0.7;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.service-author-list {
+  margin-top: 25px;
+}
+.service-author-list ul li {
+  font-size: 16px;
+  font-weight: 700;
+  color: #090d2f;
+  display: flex;
+}
+.service-author-list ul li span {
+  color: #005de0;
+  margin-right: 5px;
+  font-weight: 700;
+}
+.service-author-list ul li:hover a {
+  color: #005de0;
 }
 </style>
