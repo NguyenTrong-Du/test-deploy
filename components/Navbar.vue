@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="container">
+    <div>
       <div class="logo">
         <a href="#"><img src="../static/logo.png" alt="logo" /></a>
       </div>
@@ -38,12 +38,12 @@ export default {
   width: 100%;
   z-index: 999;
   background: #fff;
-  padding: 10px 0;
   box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 7%);
   color: #000;
   opacity: 0.8;
+  padding: 10px 60px;
 }
-.header .container {
+.header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
