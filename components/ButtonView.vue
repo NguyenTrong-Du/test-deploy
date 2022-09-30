@@ -60,4 +60,10 @@ export default {
 .btn-more a:hover::before {
   transform: skewX(45deg) scale(1, 1);
 }
+
+@media only screen and (max-width: 1430px) {
+  .btn-more {
+    margin-top: 50px;
+  }
+}
 </style>

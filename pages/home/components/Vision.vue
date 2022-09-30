@@ -96,7 +96,7 @@ export default {
 
 <style>
 .vision-section {
-  padding: 80px 0;
+  padding: 60px 0;
   overflow: hidden;
   height: 100vh;
   display: flex;

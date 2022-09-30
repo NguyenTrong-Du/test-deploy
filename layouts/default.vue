@@ -43,6 +43,14 @@ body {
   flex-wrap: wrap;
   margin: 0 -15px;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.3;
+  font-weight: 700;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -149,5 +157,16 @@ p {
 }
 .service-author-list ul li:hover a {
   color: #005de0;
+}
+
+@media only screen and (max-width: 1360px) {
+  .btn-more {
+    margin-top: 50px;
+  }
+  .top-section-heading {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-size: 50px;
+  }
 }
 </style>

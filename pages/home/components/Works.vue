@@ -23,7 +23,7 @@ export default {
 <style>
 .works-section {
   text-align: center;
-  padding: 80px 0;
+  padding: 60px 0;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -92,5 +92,19 @@ export default {
 .swiper-button-prev:after {
   font-size: 20px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1430px) {
+  .works-section {
+    height: auto;
+  }
+  .example-3d .swiper-slide[data-v-4ea458af] {
+    max-width: 750px;
+    height: 430px;
+  }
+  .works-description {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
 }
 </style>

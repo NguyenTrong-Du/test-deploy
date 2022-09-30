@@ -40,4 +40,12 @@ export default {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
+@media only screen and (max-width: 1430px) {
+  .top-section-heading {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-size: 50px;
+  }
+}
 </style>

@@ -7,11 +7,7 @@
           <div class="posts-item">
             <a href="#" class="posts-item-link"
               ><div class="posts-item-date">
-                <time
-                  itemdrop="dataPublished"
-                  datatime="2022-06-15T02:59:01+09:00"
-                  >2022.07.26</time
-                >
+                <time>2022.07.26</time>
               </div>
               <div class="posts-item-title">
                 美容室特化
@@ -25,11 +21,7 @@
           <div class="posts-item">
             <a href="#" class="posts-item-link"
               ><div class="posts-item-date">
-                <time
-                  itemdrop="dataPublished"
-                  datatime="2022-06-15T02:59:01+09:00"
-                  >2022.07.26</time
-                >
+                <time>2022.07.26</time>
               </div>
               <div class="posts-item-title">
                 美容室特化
@@ -43,11 +35,7 @@
           <div class="posts-item">
             <a href="#" class="posts-item-link"
               ><div class="posts-item-date">
-                <time
-                  itemdrop="dataPublished"
-                  datatime="2022-06-15T02:59:01+09:00"
-                  >2022.07.26</time
-                >
+                <time>2022.07.26</time>
               </div>
               <div class="posts-item-title">
                 美容室特化

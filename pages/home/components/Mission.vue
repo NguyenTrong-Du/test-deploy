@@ -60,7 +60,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 60px 0;
   background-image: url(/_nuxt/static/bg-1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -98,5 +98,11 @@ export default {
 }
 .mission-area .service-author-list ul li:hover a {
   color: #feb302;
+}
+
+@media only screen and (max-width: 1430px) {
+  .mission-section {
+    height: auto;
+  }
 }
 </style>

@@ -1,67 +1,14 @@
 <template>
   <div class="business">
     <div class="business-post">
-      <div class="business-item">
+      <div class="business-item" v-for="(blog, index) in data" :key="index">
         <a>
-          <div><img src="../../static/11.png" alt="articles" /></div>
+          <div><img :src="blog.src" alt="articles" /></div>
           <div>
-            <h4>How Technology Dominate In The new World In 2022</h4>
-            <span>2022.06.15</span>
+            <h4>{{ blog.Subtitle }}</h4>
+            <span>{{ blog.date }}</span>
             <p>
-              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
-              eir m od tempor invidunt ut labore.
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="business-item">
-        <a>
-          <div><img src="../../static/12.png" alt="articles" /></div>
-          <div>
-            <h4>How Technology Dominate In The new World In 2022</h4>
-            <span>2022.06.15</span>
-            <p>
-              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
-              eir m od tempor invidunt ut labore.
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="business-item">
-        <a>
-          <div><img src="../../static/13.png" alt="articles" /></div>
-          <div>
-            <h4>How Business Dominate In The new World In 2022</h4>
-            <span>2022.06.15</span>
-            <p>
-              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
-              eir m od tempor invidunt ut labore.
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="business-item">
-        <a>
-          <div><img src="../../static/14.png" alt="articles" /></div>
-          <div>
-            <h4>How Creative Dominate In The new World In 2022</h4>
-            <span>2022.06.15</span>
-            <p>
-              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
-              eir m od tempor invidunt ut labore.
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="business-item">
-        <a>
-          <div><img src="../../static/11.png" alt="articles" /></div>
-          <div>
-            <h4>How Technology Dominate In The new World In 2022</h4>
-            <span>2022.06.15</span>
-            <p>
-              Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy
-              eir m od tempor invidunt ut labore.
+              {{ blog.text }}
             </p>
           </div>
         </a>
@@ -73,7 +20,42 @@
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Business',
-  props: ['title'],
+  data() {
+    return {
+      data: [
+        {
+          src: '/11.png',
+          Subtitle: 'How Technology Dominate In The new World In 2022',
+          date: '2022.06.15',
+          text: 'Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor invidunt ut labore.',
+        },
+        {
+          src: '/12.png',
+          Subtitle: 'How Technology Dominate In The new World In 2022',
+          date: '2022.06.15',
+          text: 'Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor invidunt ut labore.',
+        },
+        {
+          src: '/13.png',
+          Subtitle: 'How Business Dominate In The new World In 2022',
+          date: '2022.06.15',
+          text: 'Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor invidunt ut labore.',
+        },
+        {
+          src: '/14.png',
+          Subtitle: 'How Creative Dominate In The new World In 2022',
+          date: '2022.06.15',
+          text: 'Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor invidunt ut labore.',
+        },
+        {
+          src: '/11.png',
+          Subtitle: 'How Technology Dominate In The new World In 2022',
+          date: '2022.06.15',
+          text: 'Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor invidunt ut labore.',
+        },
+      ],
+    }
+  },
 }
 </script>
 <style scoped>

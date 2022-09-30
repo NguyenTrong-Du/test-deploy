@@ -82,7 +82,7 @@ export default {
 <style>
 .service-section {
   height: 100vh;
-  padding: 80px 0;
+  padding: 60px 0;
   display: flex;
   justify-content: center;
   position: relative;
@@ -182,5 +182,11 @@ export default {
 .service-section .btn-more {
   display: block;
   margin: 60px auto;
+}
+
+@media only screen and (max-width: 1430px) {
+  .service-section {
+    height: auto;
+  }
 }
 </style>
