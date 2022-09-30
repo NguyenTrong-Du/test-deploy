@@ -10,6 +10,7 @@ export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Heading',
   props: {
+    // eslint-disable-next-line vue/require-default-prop, vue/require-prop-type-constructor
     title: '',
   },
 }
@@ -21,14 +22,12 @@ export default {
   z-index: 1;
 }
 .top-section-heading {
-  margin-bottom: 80px;
-  padding-bottom: 64px;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
   font-size: 68px;
   letter-spacing: 0.3em;
   position: relative;
-  font-family: 'bodoni-urw', serif;
   text-align: center;
-  font-weight: 400;
 }
 .top-section-heading:after {
   content: '';
@@ -40,5 +39,13 @@ export default {
   background-color: #fff;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1430px) {
+  .top-section-heading {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-size: 50px;
+  }
 }
 </style>

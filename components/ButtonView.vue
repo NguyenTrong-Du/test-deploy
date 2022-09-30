@@ -14,37 +14,56 @@ export default {
 .btn-more {
   margin-top: 60px;
   border: 0;
+  background: transparent;
 }
 .btn-more a {
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
-  padding: 10px 45px;
-  background-color: #ff3800;
-  font-size: 20px;
-  letter-spacing: 0.5px;
+  display: inline-block;
   position: relative;
-  height: 60px;
-  color: #fff;
-  font-weight: 500;
   overflow: hidden;
+  z-index: 1;
+  background-color: #005de0;
+  border-color: transparent;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  height: 60px;
+  line-height: 56px;
+  padding: 0px 55px;
+  border: 2px solid #005de0;
+  border-style: solid;
+  box-shadow: none;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  vertical-align: middle;
 }
 .btn-more a::before {
-  background: #000;
-  top: 0px;
-  width: 0px;
-  left: auto;
-  right: 0px;
-  z-index: -1;
-  bottom: 0px;
-  content: '';
   position: absolute;
-  transition: all 0.3s ease-in-out;
+  content: '';
+  z-index: -1;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: -4%;
+  height: 150%;
+  width: 150%;
+  bottom: 0;
+  background: #ffffff;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.5s ease 0s;
+}
+.btn-more a:hover {
+  box-shadow: none;
+  color: #005de0;
 }
 .btn-more a:hover::before {
-  left: 0px;
-  width: 100%;
-  right: auto;
+  transform: skewX(45deg) scale(1, 1);
+}
+
+@media only screen and (max-width: 1430px) {
+  .btn-more {
+    margin-top: 50px;
+  }
 }
 </style>

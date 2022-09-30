@@ -1,74 +1,110 @@
 <template>
-  <div class="works-section mb-240">
-    <HeadingComponent title="WORKS" />
-    <div class="works-description pc-only">
-      HR、不動産、製薬、ECモール、Ad、NoCode、予約システム、CtoC、BtoB、AI…
-      など、<br />多数の業界の、さまざまなWebシステム、モバイルアプリを開発しています。
+  <div class="works-section">
+    <div>
+      <HeadingComponent title="WORKS" />
+      <div class="works-description pc-only">
+        We are proud team of great project
+      </div>
+      <SliderBanner />
     </div>
-    <!-- <div>
-      <swiper
-        :slidesPerView="3"
-        :spaceBetween="30"
-        :slidesPerGroup="3"
-        :loop="true"
-        :loopFillGroupWithBlank="true"
-        :pagination="{
-          clickable: true,
-        }"
-        :navigation="true"
-        :modules="modules"
-        class="mySwiper"
-      >
-        <swiper-slide>Slide 1</swiper-slide><swiper-slide>Slide 2</swiper-slide
-        ><swiper-slide>Slide 3</swiper-slide><swiper-slide>Slide 4</swiper-slide
-        ><swiper-slide>Slide 5</swiper-slide><swiper-slide>Slide 6</swiper-slide
-        ><swiper-slide>Slide 7</swiper-slide><swiper-slide>Slide 8</swiper-slide
-        ><swiper-slide>Slide 9</swiper-slide>
-      </swiper>
-    </div> -->
-    <ButtonView />
   </div>
 </template>
 
 <script>
-// Import Swiper Vue.js components
-// import { Swiper, SwiperSlide } from 'swiper/vue'
-
-// Import Swiper styles
-// import 'swiper/css'
-
-// import 'swiper/css/pagination'
-// import 'swiper/css/navigation'
-
-// import './style.css'
-
-// import required modules
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-// import { Pagination, Navigation } from 'swiper'
-
 import HeadingComponent from './HeadingComponent.vue'
-import ButtonView from '~/components/ButtonView.vue'
+import SliderBanner from './SliderBanner.vue'
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Works',
-  components: { HeadingComponent, ButtonView },
-  // setup() {
-  //   return {
-  //     modules: [Pagination, Navigation],
-  //   }
-  // },
+  components: { HeadingComponent, SliderBanner },
 }
 </script>
 
 <style>
 .works-section {
   text-align: center;
+  padding: 60px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: url(../../../static/10.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.works-section > div {
+  position: relative;
+  width: 100%;
 }
 .works-description {
-  max-width: 60%;
-  margin: auto;
-  font-size: 18px;
-  line-height: 2.6667;
-  font-weight: 600;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.works-section .swiper-slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.works-section .content {
+  z-index: 3;
+  max-width: 80%;
+}
+.works-section .content h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.swiper .swiper-button-white {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 5px 57px 0px rgb(0 0 0 / 15%);
+  color: #005de0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+.swiper:hover .swiper-button-white {
+  opacity: 1;
+  visibility: visible;
+}
+.swiper .swiper-button-white:hover {
+  color: #ffffff;
+  background: #005de0;
+}
+.swiper .swiper-button-next {
+  right: 16%;
+}
+.swiper .swiper-button-prev {
+  left: 16%;
+}
+.swiper:hover .swiper-button-next {
+  right: 20%;
+}
+.swiper:hover .swiper-button-prev {
+  left: 20%;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1430px) {
+  .works-section {
+    height: auto;
+  }
+  .example-3d .swiper-slide[data-v-4ea458af] {
+    max-width: 750px;
+    height: 430px;
+  }
+  .works-description {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
 }
 </style>

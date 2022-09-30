@@ -1,64 +1,54 @@
 <template>
-  <div class="articles-section mb-240">
-    <HeadingComponent title="ARTICLES" />
-    <div class="posts-body">
-      <div class="posts-list">
-        <div class="posts-item">
-          <a href="#" class="posts-item-link"
-            ><div class="posts-item-date">
-              <time
-                itemdrop="dataPublished"
-                datatime="2022-06-15T02:59:01+09:00"
-                >2022.07.26</time
-              >
-            </div>
-            <div class="posts-item-title">
-              美容室特化
-              AI商圏分析システム「LunappAI」が、全国理美容新聞vol76号で特集されました。
-            </div>
-            <div class="posts-item-cate">
-              <span>お知らせ</span>
-            </div>
-          </a>
+  <div class="articles-section">
+    <div class="container">
+      <HeadingComponent title="ARTICLES" />
+      <div class="posts-body">
+        <div class="posts-list">
+          <div class="posts-item">
+            <a href="#" class="posts-item-link"
+              ><div class="posts-item-date">
+                <time>2022.07.26</time>
+              </div>
+              <div class="posts-item-title">
+                美容室特化
+                AI商圏分析システム「LunappAI」が、全国理美容新聞vol76号で特集されました。
+              </div>
+              <div class="posts-item-cate">
+                <span>お知らせ</span>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a href="#" class="posts-item-link"
+              ><div class="posts-item-date">
+                <time>2022.07.26</time>
+              </div>
+              <div class="posts-item-title">
+                美容室特化
+                AI商圏分析システム「LunappAI」が、全国理美容新聞vol76号で特集されました。
+              </div>
+              <div class="posts-item-cate">
+                <span>お知らせ</span>
+              </div>
+            </a>
+          </div>
+          <div class="posts-item">
+            <a href="#" class="posts-item-link"
+              ><div class="posts-item-date">
+                <time>2022.07.26</time>
+              </div>
+              <div class="posts-item-title">
+                美容室特化
+                AI商圏分析システム「LunappAI」が、全国理美容新聞vol76号で特集されました。
+              </div>
+              <div class="posts-item-cate">
+                <span>お知らせ</span>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="posts-item">
-          <a href="#" class="posts-item-link"
-            ><div class="posts-item-date">
-              <time
-                itemdrop="dataPublished"
-                datatime="2022-06-15T02:59:01+09:00"
-                >2022.07.26</time
-              >
-            </div>
-            <div class="posts-item-title">
-              美容室特化
-              AI商圏分析システム「LunappAI」が、全国理美容新聞vol76号で特集されました。
-            </div>
-            <div class="posts-item-cate">
-              <span>お知らせ</span>
-            </div>
-          </a>
-        </div>
-        <div class="posts-item">
-          <a href="#" class="posts-item-link"
-            ><div class="posts-item-date">
-              <time
-                itemdrop="dataPublished"
-                datatime="2022-06-15T02:59:01+09:00"
-                >2022.07.26</time
-              >
-            </div>
-            <div class="posts-item-title">
-              美容室特化
-              AI商圏分析システム「LunappAI」が、全国理美容新聞vol76号で特集されました。
-            </div>
-            <div class="posts-item-cate">
-              <span>お知らせ</span>
-            </div>
-          </a>
-        </div>
+        <ButtonView />
       </div>
-      <ButtonView />
     </div>
   </div>
 </template>
@@ -76,6 +66,8 @@ export default {
 <style>
 .articles-section {
   position: relative;
+  /* height: 100vh; */
+  padding: 100px 0;
 }
 .posts-body {
   max-width: 1170px;
